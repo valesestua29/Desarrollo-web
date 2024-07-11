@@ -1,0 +1,391 @@
+----------------- CLASE 3 ---------------------
+
+-- CSS --
+
+sintaxis: 
+
+    selector {
+        propiedad: valor ;
+        propiedad: valor ;
+    }
+
+
+Padres e hijos --- 
+
+<section>
+    <article>
+        <h2>    
+        <p>
+
+en este caso section es padre de article, y a su vez, article es padre de h2 y p 
+en css: section article h2 
+
+
+Maneras de escribir CSS --- 
+
+<head>
+    <link reel="stylesheet" href="link.css" >
+
+ 
+ -Selectores ---
+
+
+ Para etiquetas 
+    nombre_etiqueta {
+            Estilos ;
+    }
+
+    kebab : con un guion medio  parrafo-uno;
+    camelCase: segunda palabra con primer letra en mayus parrafoUno ;
+    snake_case: con un guion bajo parrafo_uno ;
+
+ Por Clase  
+    - en html 
+    <p class="parrafoUno"> 
+    - en css se agrega un punto por delante del nombre 
+    .parrafoUno { 
+        estilos ;
+    }
+
+
+Propiedades: 
+
+*/ TEXTO /*
+
+    - text-aling: alinea el texto;
+        center: alinea centrado
+        left: alinea a la izquierda
+        right: alinea a la derecha
+        justify: justifica el texto
+
+    - text-decoration: decoracion en el texto;
+        overline: texto subrayado por arriba
+        line-through: texto tachado
+        dotted: 
+        underline: subrayado 
+
+    -text-transform: transforma el texto
+        uppercase: cambia el texto a mayuscula
+        capitalize: la primer letra mayuscula
+        lowercase: cambia el texto a minusculas
+
+    -text-shadow: sombras
+        horizontal px vertical px transparencia px color ;
+
+    -text-indent: genera sangrias
+
+ */ FUENTES /* 
+
+    poner google fonts:  
+    - de esta forma tengo que copiar el codigo en cada uno de los html 
+        get embed code - copiar <link> - pegar en el head - copio el css - lo pego en el archivo css 
+    - a traves de un @import 
+        copiamos solamente lo que esta dentro de las etiquetas <style> y lo pegamos en el css
+
+    - font-family: familia de tipografia
+    - font-weight: tamaño de la tipografia
+    - font-style: 
+    - font-size: tamaño de la fuente 
+
+
+
+----------------- CLASE 4 ---------------------
+
+BOX MODELING 
+
+
+MEDIDAS - 
+*** 1rem = 16 px ***
+*** 100% = 16 px // Regla de 3 
+
+
+Absolutas: medidas que no se modifican frente a los tamaños de pantalla
+    px: pixeles 
+    
+Relativas: medidas que se adaptan a los tamaños de pantalla 
+    %: porcentaje ; toma de referencia al 100% del ancho de pantalla = contenedores
+    rem: trabaja sobre el tamaño de fuente por defecto = tipografias
+    em: toma como base el tamaño de fuente del contendor donde se aplica
+
+Propiedades 
+
+    background-color: ; agrega un color de fondo
+    width: ancho ; 
+    height: alto ;
+    background-image: url("") ; agrega imagen de fondo
+    background-position: ; defino donde posiciono la imagen
+    background-size: contain; contiene la imgane y la repite para que no la repita ponemos
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; para que ocupe todo
+    background-size: cover ; cubre todo el contenedor, pero no se ve la imagen completa. Se ajusta
+    
+
+*/ Box Modeling /*
+
+Cualquier etiqueta de html funciona como una caja
+
+Ejemplo
+
+content : es la casa 
+padding : es el patio interno
+border : la medianera 
+margin : espacio entre casitas 
+
+*---------------------------------------*
+
+bloque: existen etiquetas que por defecto estan en bloque
+
+ul ; h1 ; p ; img ; etc
+
+en linea: ocupan solo una parte, el espacio de su contenido
+
+a ; span ; button ; 
+
+Ejemplo de la clase 
+
+.boton {
+    background-color: red ;     Toma un color de fondo rojo
+    font-size: 1.25rem;         Aumento el tamaño de la tipografia
+    padding: 20px;              Genera un espacio interno en el bloque
+
+    * Para el borde tengo que usar si o si estas tres propiedades juntas *
+    border-width: ;             Tamaño de ancho del border
+    border-style: ;             Estilo del border
+    border-color: ;             Color del border
+    border: px style color ;    Trabajo todo junto en la misma propiedad
+    border-radius: ;            Permite redondear el box
+
+    * Margenes * 
+
+     
+}
+
+Para cancelar las propiedades default del navegador
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box  ;   Permite que todos los elementos se intenten mantener en la pantalla
+}
+
+Maquetacion clasica
+
+    * Display *     permite cambiar el estado natural de una etiqueta
+
+    display: block ;
+    display: inline ; 
+    display: flex; 
+    
+    * Position *    trabaja sobre la posicion de los elementos
+
+    position: static;
+    position: relative;     mantiene el elemento en su posicion y cuando sea necesario se mueve
+    */ top, bottom, left, right /*
+    position: absolute; 
+    position:
+    position:
+
+
+
+
+----------------- CLASE 5 ---------------------  
+
+FLEX BOX
+
+Es un modo diseño que permite crear estructuras
+Permite el uso responsive 
+
+Solo se aplica a etiquetas contenedoras para afectar a los hijos directos del elemento
+
+
+contenedores
+
+display: flex;  todo el bloque trabaja de manera flexible, es decir en fila 
+width: 100%;
+height: 500px;
+
+/** direccion - flexible **/
+
+direccion: la propiedad flex-direction;
+
+flex-direction: row;         Uno al lado del otro 
+flex-direccion: column;      Uno abajo del otro
+flex-direction: row-reverse; Los elementos inician por la derecha y al reves en orden .. Modo espejo
+flex-wrap: wrap;             Cuando un elemento no entra en la pantalla el contenedor, mantiene su proporsion y la envia hacia abajo
+
+
+/** movimientos **/ - Horizontal
+
+justify-content: center ;   Automaticamente todos los elementos se mueven al centro del contenedor
+justify-content: flex-end;  Automaticamente todos los elementos se mueven al final del contenedor
+justify-content: flex-start; Automaticamente todos los elementos se mueven al inicio del contenedor
+justify-content: space-between; Los elementos al inicio y al final se pegan al margen y en el centro se genera un espacio equitativo entre cada elemento
+justify-content: space-around;  Genera la mitad de un espacio al inicio y final y luego genera la division de espacios equitativa entre elementos.
+justify-content: space-evenly;   Los espacios al inicio al final y entre elementos son iguales
+
+// para cuando el contenido se excede del contenedor
+** overflow: hidden; esconde el exceso en el contenedor
+
+/** movimientos **/ - vertical
+
+align-items: center;    Centra los elementos 
+align-items: flex-end;  Mueve los elementos al final
+align-items: flex-start;   Mueve los elementos al inicio
+
+- solo cuando este aplicado -
+flex-wrap: wrap;
+align-content: space-between;  
+align-content: space-around;
+align-content: space-evenly; 
+
+- Para trabajar sobre un elemento definido -
+align-self: flex-start; 
+align-self: center;
+align-self: flex-end;
+
+/* Permite ordenar los elementos */
+order: numeros; 
+
+
+
+
+/* ----------- GRIDS CLASE 6 ---------------- */
+ 
+El maximo de columnas es 12 dentro de una pantalla
+
+A diferencia de flexbox grids nos permite crear diseños bidimencionales de filas y columnas 
+--- en galeria de imagenes por Ejemplo
+
+a tener en cuenta: grids layout css 
+
+trabajo en una etiqueta contenedora
+4x3 4 columnas 3 filas es decir 12 celdas
+cada celda esta delimitada por una grid line, que se cuentan a partir del 1
+una vez declarada la grilla podemos declarar
+un areas cuando un item ocupa mas de una fila o columnas
+un track cuando un item ocupa toda una fila o toda una columna
+
+IMPLEMENTAR GRIDS
+
+en html ----
+
+<section class="grid">
+    <div class="div1"> div </div>
+    <div class="div2"> div </div>
+    <div class="div3"> div </div>
+    <div class="div4"> div </div>
+    <div class="div5"> div </div>
+</section>
+
+
+en css ----
+
+fr trabaja similar a las fracciones por ejemplo si quiero usar 3 columnas dentro de un 100%
+
+.grid{
+    display: grid ;  // cambia el estado natural de la etiqueta
+    width: 100%;
+    height: 100vh;  // vh toma el tamaño total de la pantalla en el largo
+    grid-template-colums: repeat(cantidad, tamaño) ;  //declaro la cantidad de colunmnas
+    grid-template-rows: repeat(cantidad, tamaño) ; // declaro la cantidad de filas / no es obligatorio 
+ 
+    grid-template-areas: 
+    * para declarar cada row uso comillas dobles
+    "div1 div1 div1 div1"  // es el elemento ocupando cada columna
+    "div2 div2 div3 div4"
+    "div2 div2 div3 div4"
+    "div5 div5 div5 div4"      * o puedo usar (/)
+    justify-content:    ; // mueve el contenedor completo 
+    aling-content:  ; 
+
+    /* propiedades que afectan a los hijos */
+    justify-items: ; // se mueve en torno al contendor en linea vertical
+    aling-items: ; // se mueve en torno al contenedor en linea horizontal
+    tambien se puede hacer de manera individual con cada uno de los hijos 
+}
+
+.div1{ 
+    (/) grid-area: div1
+    aling-self: ;
+    justify-self: ;
+}
+.div2{ (/) grid-area: div2 }
+.div3{ (/) grid-area: div3 }
+.div4{ (/) grid-area: div4 }
+.div5{ (/) grid-area: div5 }
+
+
+/* ----- Otra manera de trabajar con GRIDS ----- */ 
+
+<section class="grid2>
+    <h1> Titulo </h1>
+    <img class="img1"> 
+    <img class="img2"> 
+    <p> esto es un parrafo </p>
+</section>
+
+.grid2{
+    display: grid; 
+    width: 100%;
+    height: hv;
+    grid-template-colums: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr)
+}
+
+Esto es necesario para que las imagenes se contengan en la grilla 
+.grid2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid2 h1{
+    grid-column-start: 4;  // A partir de que linea vertical quiero que empiece a verse el contenido en la grilla
+    grid-column-end: 7; // Es la linea vertical en la que va a terminar el contenido
+    grid-row-start: ; linea horizontal 
+    grid-row-end: ; linea horizontal 
+}
+
+grid-column: columna-inicial / columna-final
+grid-row: fila-inicial / fila-final
+
+grid-area: row-inicial / column-inicial / row-final / column-final
+.div2 { grid-area: 1 / 3 / 2 / 4; }
+
+Mientras mas cerca este el elemento del inicio de la grilla, mas profundo es donde esta ubicado (z-index negativo)
+para modificar el orden en el que se ven los elementos, le aplico order a cada uno. 
+order: ;  
+
+
+/* ----- CLASE 7 GRIDS II -------- */
+
+Diseño responsive 
+
+Refiere a la idea de que un sitio web deberia mostrarse igual de bien en todo tipo de dispositivo
+
+usaremos Media Queries 
+
+
+mobile: minimo 1 , maximo 2 columnas --> tamaño de fuente entre 12 y 16 px
+tablet: minimo 2 , maximo 4 columnas --> 16 y 24 px
+web: minimo 3 , maximo 12 columnas --> 24px a inf
+
+PARA LAPTOP
+@media (max-width: 1024px){
+    llamo a las clases o etiquetas
+    
+    etiqueta {
+        solo las propiedades que van a ser modificadas 
+    }
+}
+
+PARA TABLET 
+@media (max-width: 768px){
+
+}
+
+PARA CELULAR 
+@media (max-width: 425 px){
+
+}
+
+
+

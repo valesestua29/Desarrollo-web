@@ -1,0 +1,762 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* BOOTSTRAP */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+*{
+    margin: 0px; 
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+/* ------ HEADER - NAV ------ */ 
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #8BA76C;        /* Aplica color al fondo del nav */
+    justify-content: space-between;     /* Mueve el contenido */
+    padding: 0rem, 1.875rem;
+    align-items: center;
+}
+
+.abrir-menu, 
+.cerrar-menu{
+    display: none;
+}
+
+.nav-bar{
+    display: flex;
+    list-style-type: none; /* Elimina los puntos negros */
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.nav-bar li a{
+    color:black;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 20px;
+
+    /* El color que quiero que tome cuando pase el mouse por arriba 
+    background-color: #748B5B; */
+}
+
+.logo1{
+    width: 8.125rem;
+    margin: 0.9375rem 0px 0px 3.125rem;
+}
+
+
+/*  FOOTER */ 
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #8BA76C;        /* Aplica color al fondo del nav */
+    justify-content: space-between;     /* Mueve el contenido */
+    padding: 0rem, 1.875rem;
+}
+
+
+.info-footer{
+    display: flex;
+    padding: 0.625rem;
+    margin: .9375rem;
+}
+
+.info-footer div{
+    margin: 0px 30px;
+}
+
+.icono-footer{
+    width: 3.125rem;
+    margin: 10px 0px;
+}
+
+.icono-redes{
+    width: 6.25rem;
+    text-decoration: none;
+    padding: 1.5625rem;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    margin-right: 3.125rem;
+}
+
+.info-footer div h2{
+    font-family: "Lato";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: #013F18;
+    text-align: justify;
+}
+
+.titulo-footer {
+    padding-top: 8.58px;
+}
+
+.info-footer div p {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9375rem;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+body{
+    background-color: #F0EBE6;
+}
+
+/* MAIN --- INDEX */ 
+
+.imagen-principal{
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+.contenedor{
+    margin-left: 4.6875rem;
+    margin-right: 4.6875rem;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo2{
+    width: 40%;  
+}
+
+.texto-cont{
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    text-align: justify;
+    line-height: 1.6em;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+/*  MAIN - NUESTROS SERVICIOS  */
+
+.texto-titul{
+    color:black;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.articulo-principal{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px; 
+}
+
+.texto-info {
+
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    text-align: justify;
+    line-height: 1.6em;
+    margin-left: 1.25rem;
+}
+
+.texto-subt{
+    color:black;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.contenedor article{
+    margin: 1.875rem 0rem;
+}
+
+.texto-info2{
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+
+/*  MAIN - NUESTRAS SUCURSALES  */
+
+.main-ns{
+    background: url(../assets/Img/fondo3-3.png);
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat;
+}
+
+.grid2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: .125rem;
+    grid-row-gap: .125rem;
+
+    grid-template-areas: 
+    "suc1 suc2"
+    "suc3 suc4";
+}
+
+.grid2 div{
+    position: relative;
+    margin: 1.25rem;
+
+    display: flex; /* Añadir flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el texto */
+
+}
+
+.suc1{ grid-area: suc1;}
+.suc2{ grid-area: suc2;}
+.suc3{ grid-area: suc3;}
+.suc4{ grid-area: suc4;}
+
+.grid2 img{
+	height: 6.25rem;
+	width: 25rem;
+	object-fit: cover;
+}
+
+.grid2 div iframe{
+    margin-top: .9375rem;
+    width: 25rem;
+    height: 21.875rem;
+}
+
+
+/*  MAIN - CONTACTO  */
+
+.main-contacto{
+    background: url(../assets/Img/fondo3-3.png);
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat;
+}
+
+.icono-info{
+    width: 3.125rem;
+    margin: 10px 0px;
+    
+}
+
+.grid3{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: .125rem;
+    grid-row-gap: .125rem;
+
+    margin: 0px 0px 0px 50px; 
+    grid-template-areas: 
+    "cont1 cont2";
+}
+
+.cont1{ grid-area: cont1;}
+.cont2{ grid-area: cont2;}
+
+.grid3 div{
+    position: relative;
+    margin: 1.25rem;
+
+    display: flex; /* Añadir flexbox */
+    justify-content: center; /* Centrar verticalmente */
+
+}
+
+.formulario{
+    background-color: #8ca76ca4;
+    padding: 20px;
+    width: 600px;
+    height: 700px;
+}
+
+.formulario p label input{
+    width: 500px;
+    height: 50px;
+    padding: 15px;
+}
+
+.formulario p label textarea{
+    width: 500px;
+    height: 150px;
+    padding: 15px
+}
+
+.boton-enviar1 {
+    padding: 10px 15px;
+    margin: 10px 75px;
+}
+
+.boton-enviar2 {
+    padding: 10px 25px;
+    margin-right: 40px;
+    float: right;
+}
+
+.cont1 {
+    display: flex;
+    align-items: center;
+}
+.cont2 {
+    display: flex;
+    align-items: center;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    margin:0px 20px;
+}
+
+.cv-info{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.cv-info input {
+    padding: 7px;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+/*--- Galerias de imagenes ---*/
+
+.galeria div{
+    position: relative;
+}
+
+.galeria{
+    margin-top: 4.6875rem;
+    margin-bottom: 1.5625rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: .125rem;
+    grid-row-gap: .125rem;
+
+    grid-template-areas: 
+    "div1 div1 div2 div3"
+    "div4 div5 div6 div3";
+
+}
+
+.div1{ grid-area: div1;}
+.div2{ grid-area: div2;}
+.div3{ grid-area: div3;}
+.div4{ grid-area: div4;}
+.div5{ grid-area: div5;}
+.div6{ grid-area: div6;}
+
+.galeria img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 768px){
+
+
+    /*-- BARRA DE MENU --*/
+    .abrir-menu{
+        margin-right: 3.125rem;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        padding: 5px;
+        border: 0;
+        font-size: 35px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #8BA76C;
+        padding: .625rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.404);
+        z-index:5;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li{
+        padding: 5px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    /*-- FOOTER --*/
+
+    .info-footer{
+        padding: .1875rem;
+        margin: .3125rem;
+    }
+
+    .icono-footer{
+        width: 25px;   
+    }
+
+    .icono-redes{
+        width: 4.6875rem;
+    }
+
+    .info-footer div h2{
+        font-size: 20px;
+    }
+
+    .titulo-footer{
+        padding-top: 4.29px ;
+    }
+
+    .info-footer div p {
+        font-size: 16px;
+    }
+
+
+    /* -- MAIN  INDEX -- */
+
+    .contenedor{
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        padding: 10px;
+    }    
+
+    .logo2{
+        width: 40%;
+    }
+
+    .texto-cont{
+        font-size: 18px;
+        padding-top: 5px;
+        margin: 10px;
+    }
+
+
+    /* MAIN - NUESTROS SERVICIOS */
+
+    .articulo-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articulo-principal video{
+        width: 100%;
+    }
+
+    .articulo-principal .texto-info{
+        margin-left: 0px;
+        margin-top: .625rem;
+    }
+
+    .texto-subt{
+        font-size: 18px;
+    }
+    .texto-info .texto-info2{
+        font-size: 16px;
+    }
+
+
+    /* Nuestras Sucursales */
+
+    .grid2 img{
+        height: 6.25rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .grid2 div iframe{
+        margin-top: .9375rem;
+        width: 100%;
+        height: 250px;
+    }
+    
+    
+    /* --- galeria --- */
+
+    .galeria{
+        margin-top: 1.5625rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "div1 div1"
+        "div2 div3"
+        "div4 div3"
+        "div5 div6" ;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------- */
+
+@media (max-width: 425px){
+
+    /*-- BARRA DE MENU --*/
+    .abrir-menu{
+        margin-right: 3.125rem;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        padding: 5px;
+        border: 0;
+        font-size: 20px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #8BA76C;
+        padding: .625rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.404);
+        z-index:5;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li{
+        padding: 5px;
+        margin: 0px 0px 10px 0px;
+    }
+
+
+    footer{
+        padding: 0px, 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-footer{
+        padding: .1875rem;
+        margin: 0px;
+    }
+
+    .info-footer div{
+        margin: 0px 5px;
+        
+    }
+
+    .icono-footer{
+        width: 1.5625rem;
+    }
+
+    .redes-sociales{
+        margin: 0px;
+    }
+
+    .icono-redes{
+        width: 70px;
+    }
+
+    .info-footer div h2{
+        font-size: 14px;
+    }
+
+    .info-footer div p{
+        font-size: 12px;
+    }
+
+    /* MAIN --- INDEX */
+
+    .logo2{
+        width: 60%;
+    }
+
+    .texto-cont{
+        font-size: 14px;
+    }
+
+    /* NUESTROS - SERVICIOS */
+
+    .texto-titul{
+        font-size: 24px;
+    }
+
+    .texto-info,
+    .texto-subt,
+    .texto-info2{
+        font-size: 14px;
+    }
+
+    /* Nuestras Sucursales */
+
+    .grid2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .grid2 div iframe{
+        display: none;
+    }
+    .grid2 img{
+        display: none;
+    }
+
+    .grid2 div{
+        position: relative;
+        width: 100%;
+        max-width: 500px; /* Ajusta el tamaño máximo según tus necesidades */
+        background: url('../assets/Img/cartel_serenfolia.jpg') no-repeat center center;
+        background-size: cover; 
+        text-align: center; 
+    }
+
+    .grid2 div h2{
+        width: 100%;
+        background-color: #acacacb4;
+    }
+
+    .grid2 div p{
+        width: 100%;
+        background-color: #d9d9d9b4;
+        padding: 30px 10px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    /* MAIN - CONTACTO */
+
+    .icono-info{
+        width: 1.875rem;
+    }
+
+    .grid3{
+        margin:0px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+
+        grid-template-areas: 
+        "cont1"
+        "cont2";
+    }
+
+    .informacion h3{
+        font-size: 16px;
+    }
+
+    .informacion p{
+        font-size: 12px;
+    }
+
+    .grid3 div{
+        margin: 10px;
+    }
+
+
+    .formulario{
+        width: 250px;
+        height: 500px;
+    }
+
+    .formulario p label input{
+        width: 200px;
+        height: 10px;
+        padding: 15px;
+    }
+
+    .formulario p label textarea{
+        width: 200px;
+        height: 150px;
+        padding: 15px
+    }
+
+    .boton-enviar2 {
+        padding: 10px 25px;
+        margin-right: 0px;
+        float: right;
+    }
+
+    
+
+
+}

@@ -1,0 +1,46 @@
+/* --- CLASE 8 -- GIT --- */
+
+3 estados de GIT
+
+1er estado (el que trabajamos)                               -> working directory
+2do estado (archivos listos)                 - git add -     -> staging area
+3er estado (registro de todos los archivos)  -git commit -   ->respository
+
+$ git config --global user.name "nombre apellido"
+$ git config --global user.email direccion@email.com
+
+$git config --list 
+
+$git config --global unset-all user.name
+$git config --global unset-all user.email
+
+COMANDOSSS ------
+
+$ pwd           // donde estoy posicionado
+$ ls            // lista de los elementos que se encuentran donde estoy posicionado
+$ clear         // limpia la consola
+$ ls -a         // muestra archivos ocultos
+$ ls -l         // informacion adicional
+$ cd nombre                 // ingresa en la carpeta nombrada
+$ mkdir nombre              // crea una carpeta con ese nombre
+$ touch nombre.extencion    // crea un archivo
+$ cd ..                     // para salir de una carpeta
+$ rm archivo.extencion      // para eliminar un archivo 
+$ code nombre               // lo abre en vsc
+
+
+$cd carpeta         // arrastro la carpeta donde voy a trabajar
+$git init           // para iniciar el controlador de la carp
+$git status         // para ver el estado de nuestro trabajo
+$git add nombre     // agrega el archivo al staying area
+$git rm --cached nombre.extencion   //para eliminar un archivo del staging area
+$git add .          //envia todo al staging area
+$git commit -m "comentario"     // 
+$
+$ 
+
+
+
+
+
+

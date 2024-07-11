@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Estilos CSS -->
+    <link href="../css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img class="logo1" src="../assets/Logos/Recurso 3.png" width=30%>
+        </a>
+        <button id="abrir"class="abrir-menu"> <i class="bi bi-list"></i>  </button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"> <i class="bi bi-x-lg"></i> </button>
+            <ul class="nav-bar">
+                <li> <a href="../index.html"> Inicio </a> </li>
+                <li> <a href="quienes_somos.html"> Quienes Somos </a> </li>
+                <li> <a href="nuestros_servicios.html"> Nuestros Servicios</a> </li>
+                <li> <a href="nuestras_sucursales.html"> Nuestras Sucursales</a> </li>
+                <li> <a href="#"> Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-contacto">
+        <div class="contenedor">
+            <h1 class="texto-titul"> CONTACTO </h1>
+
+            <section class="grid3">
+                <div  class="cont1">
+                    <img class="icono-info" src="../assets/Iconos/reloj.png">
+                    <div class="informacion">
+                        <h3 >Trabaja con nosotros </h3>
+                        <p > rrhh@serenfolia.com.ar </p>
+                    </div>
+                </div>
+
+                <div class="cont2">
+                    <img  class="icono-info" src="../assets/Iconos/email.png">
+                    <div  class="informacion">
+                        <h3 > Consultas </h3>
+                        <p > pasion@serenfolia.com.ar</p>
+                    </div>
+                </div>
+            </section>
+
+            <form class="cv-info">
+                <h2 class="texto-titul"> Dejanos tu curriculum </h2>
+                <input type="file" name="cv" placeholder="Cargar CV">
+                <input class="boton-enviar1" type="button" id="subButton" value="Enviar">
+            </form>
+        
+
+            <section>
+                <h2 class="texto-titul"> Dejanos tu opinion </h2>
+                
+                <form class="formulario">
+                    <p class="texto-cont"> 
+                        <label for="nombre">
+                            Nombre <br>
+                            <input type="text" placeholder="Ingrese su nombre">
+                        </label>
+                    </p>
+                    <p class="texto-cont"> 
+                        <label for="apellido">
+                            Apellido <br>
+                            <input type="text" placeholder="Ingrese su apellido">
+                        </label>
+                    </p>
+                    <p class="texto-cont"> 
+                        <label for="email">
+                            Correo electronico: <br>
+                            <input type="email" placeholder="Ingrese su correo electronico">
+                        </label>
+                    </p>
+                    <p class="texto-cont"> 
+                        <label for="comentario">
+                            Comentario <br> 
+                            <textarea placeholder="Escribe tu comentario"> </textarea>
+                        </label>
+                    </p>
+
+                    
+                    <input class="boton-enviar2" type="submit" value="Enviar">
+                </form>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        
+        <div class="info-footer">
+            <div>
+                <img class="icono-footer" src="../assets/Iconos/reloj.png" >
+                <h2> Trabaja con nosotros </h2> <br>
+                <p> rrhh@serenfolia.com.ar</p> 
+            </div>
+    
+            <div>
+                <img class="icono-footer" src="../assets/Iconos/email.png">
+                <h2 class="titulo-footer"> Consultas </h2> <br>
+                <p > pasion@serenfolia.com.ar</p> 
+            </div>
+        </div>
+        
+        <div class="redes-sociales" >
+            <a href="https://www.linkedin.com/in/valeriasestua29/" target="_blank">
+                <img class="icono-redes" src="../assets/Iconos/linkedin.png">
+            </a>
+            <a href="https://www.instagram.com/valesestua" target="_blank">
+                <img class="icono-redes" src="../assets/Iconos/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61550075657375" target="_blank">
+                <img class="icono-redes" src="../assets/Iconos/facebook.png">
+            </a>
+        </div>
+        
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

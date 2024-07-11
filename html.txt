@@ -1,0 +1,126 @@
+---------------------  CLASE 1  -----------------------
+
+- creo el archivo index.html
+- creo 3 carpetas que van a ser la estructura del proyecto
+    1. CSS 
+    2. assets
+    3. pages
+
+- trabajo en html - 
+    - !enter y me crea la estructura base
+    - los numeros a la izquierda hacen referencia a la linea de codigo
+    - abajo a la derecha existe el dato ln 10, col17 que indica donde esta posicionado el cursor 
+    - concepto: padre - hijo ; html es padre directo de head y body ; 
+    - todo lo que se escriba en el body se va a visualizar en el navegador
+
+    ETIQUETAS --- 
+
+        de contenido --- van a contener informacion del tipo documento, imagen, audio, video, texto, etc
+            
+            <p></p> parrafo, permite el ingreso de texto
+
+        contenedoras --- van a agrupar la informacion en bloques
+
+            - Etiquetas de 1er orden --- 
+                <header> el encabezado del sitio
+                <main> el cuerpo del sitio 
+                <footer> el pie de pagina del sitio
+
+            - Etiquetas de 2do orden ---
+                <section> es para delimitar secciones del sitio
+                <article> agrupa informacion de tipo noticias, blog, etc
+
+            - Etiquetas de 3er orden ---
+                <div> es una etiqueta generica que solo sirve para agrupar 
+                <aside> contiene informacion que no es directamente relacionada con el sitio (publicidad)
+
+
+---------------------  CLASE 2  -----------------------
+
+    ETIQUETAS --- 
+
+        de contenido --- van a contener informacion del tipo documento, imagen, audio, video, texto, etc
+            
+            <p></p> parrafo, permite el ingreso de texto
+
+            Titulos --- H 
+                <H1> </H1> -- Solamente 1 por archivo html -- Es el titulo principal
+                <H2> </H2> -- del 2 al 6 todos los que necesitemos -- son los subtitulos 
+                <H3> </H3> -- 
+                <H4> </H4> --
+                <H5> </H5> --
+                <H6> </H6> --
+
+            Listas --- 
+                -- Listas Ordenadas -- infomacion ordenada en pasos
+                    <ol> inicia la lista ordenada
+                    <li> indica un elemento de la lista  
+
+                -- Listas Desordenadas -- informacion que no consta de un orden 
+                    <ul> inicia la lista desordenada 
+                    <li> indica un elemento de la lista 
+
+                -- Listas de definicion -- para ingresar definiciones 
+                    <dl> inicia la lista de definicion 
+                    <dt> indica el titulo
+                    <dd> indica el significado
+
+            Enlaces ---
+                - Absolutos : a sitios externos en una ventana nueva
+                    <a href="link" target="_blank"> TituloDelLink </a>
+                - Relativos : me permiten relacionarme con diferentes archivos dentro del proyecto 
+                    . -> vamos hacia adelante
+                    .. -> vamos hacia atras 
+                    <a href="./pages/ejemplo.html">
+
+                - Internos : dentro del mismo archivo
+                    <a href="#Id-Receptor"> ir al top </a>
+
+                - Multimedia ---
+
+                    - Imagenes  <img src="link" alt="textoAlternativo"> 
+                    - Videos    <video src="link" alt="textoAlternativo" controls>
+                    - Audio     <audio src="link" alt="textoAlternativo" controls>
+
+                    - Iframes   <iframe> 
+                        * Busco el enlace iframe de la pagina 
+                        ejemplo mapas: 
+                            - elijo un punto
+                            - compartir
+                            - incorporar mapa
+                            - copiar iframe
+
+            Barra de navegacion ---
+
+                <header>
+                    <nav>
+                        <ul> 
+                            <li> <a href=""> INICIO </a> </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                * En cada pagina que este posicionada voy a poner un # en el href=" " para no generar una recarga de la pagina
+                * En la barra de navegacion no usar target="_blank" ; solo cuando es un enlace externo/absoluto
+
+
+            Formularios ---
+            
+                <form>
+                    <fieldset> crea un borde 
+                    <legend> crea el titulo 
+
+                <label for=""> capta la informacion 
+                <input type="" value="" > el tipo de informacion a ingresar
+
+                types: 
+                    - text
+                    - number
+                    - password
+                    - email
+                    - checkbox
+                    - radio
+
+                ejemplo:
+                <label for="nombre"> nombre : </label>
+                <input type="text" id="nombre" required placeholder="ingresa un nombre" >
