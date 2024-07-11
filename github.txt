@@ -36,7 +36,7 @@ $git add nombre     // agrega el archivo al staying area
 $git rm --cached nombre.extencion   //para eliminar un archivo del staging area
 $git add .          //envia todo al staging area
 $git commit -m "comentario"     // 
-$
+$git log            // avisa quien hizo qué y cuando 
 $ 
 
 
