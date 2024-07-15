@@ -63,6 +63,27 @@ $git merge rama
 
 /* --- CLASE 9 -- GITHUB --- */
 
+vincular el proyecto local con GITHUB
+
+en la pagina de GITHUB
+
+- boton new respository
+- elegimos un nombre SIN ESPACIOS
+- ponemos una pequeña descripcion
+- visualizarlo publico
+- agregamos el README
+- no elegimos el resto de los elementos
+- creamos el rep 
+
+a tener en cuenta :
+    GITHUB tiene las lineas de comando para trabajar con dicha herramienta  
+
+
+git branch -M main (para que la rama master pase a ser rama MAIN)
+
+enlazar proyecto al repositorio de git 
+
+-git remote add origin main 
 
 
 
