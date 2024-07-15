@@ -37,9 +37,31 @@ $git rm --cached nombre.extencion   //para eliminar un archivo del staging area
 $git add .          //envia todo al staging area
 $git commit -m "comentario"     // 
 $git log            // avisa quien hizo qué y cuando 
-$ 
 
 
+
+Ramas
+
+principal -> master o main 
+
+$git branch             // muestra la rama principal
+$git branch nombre      // creo la rama 
+$git checkout nombre    // me posiciono en la rama creada 
+
+una vez posicionado en la rama 
+
+$git status
+$git add .
+$git commit -m
+$git checkout rama      
+
+para unir dos Ramas
+
+me posiciono en rama main
+$git merge rama
+
+
+/* --- CLASE 9 -- GITHUB --- */
 
 
 
