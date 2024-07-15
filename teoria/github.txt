@@ -88,5 +88,11 @@ $ git push -u origin main        // empuja todos los archivos que se encuentran 
 
 aceptamos el "sign in with your browser"    
 
+para ver como se ve el proyecto desde GITHUB
+
+-settings
+-columna izquierda - pages
+-branch - main - save 
+- se habilita una fila nueva en la columna derecha que me permite ver el link de mi pag web 
 
 
