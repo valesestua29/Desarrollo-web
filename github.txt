@@ -71,7 +71,7 @@ en la pagina de GITHUB
 - elegimos un nombre SIN ESPACIOS
 - ponemos una pequeña descripcion
 - visualizarlo publico
-- agregamos el README
+- no agregamos el README
 - no elegimos el resto de los elementos
 - creamos el rep 
 
@@ -83,7 +83,10 @@ git branch -M main (para que la rama master pase a ser rama MAIN)
 
 enlazar proyecto al repositorio de git 
 
--git remote add origin main 
+$ git remote add origin <pego el link del repositorio que aparece en github>
+$ git push -u origin main        // empuja todos los archivos que se encuentran de manera local al repositorio 
+
+aceptamos el "sign in with your browser"    
 
 
 
