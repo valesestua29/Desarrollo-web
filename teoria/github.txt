@@ -132,6 +132,8 @@ lo pego en el archivo readme.md
 
 
 
+para fusionar las dos Ramas
+git merge branch rama-secundaria
 
 
 
