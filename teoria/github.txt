@@ -95,4 +95,44 @@ para ver como se ve el proyecto desde GITHUB
 -branch - main - save 
 - se habilita una fila nueva en la columna derecha que me permite ver el link de mi pag web 
 
+De que sirve github?
+me permite ver el codigo y quien creo la linea de codigo
+
+
+$ git push // me permite cargar los cambios realizados en github
+
+
+si queremos trabajar en equipo
+-settings
+-colaboradores
+-cargo el mail
+-envio la invitacion 
+
+/-------------------------------------/
+
+trabajar sobre una rama
+
+$ git branch rama-secundaria
+$ git checkout rama-secundaria
+posicionado ya en rama-secundaria
+$ git add .
+$ git commit -m "comentario"
+$ git push -u origin rama-secundaria  
+
+
+Modificar el README
+
+nombre del proyecto
+de que trata el proyecto
+que se utilizo en el proyecto
+
+utilizo editor.md en la web 
+copio el bloque de codigo
+lo pego en el archivo readme.md
+
+
+
+
+
+
 
