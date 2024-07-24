@@ -425,6 +425,28 @@
             .navbar__li--flex()
 
 
+/* --------------- CLASE 11 -------------------- */
+
+    FRAMEWORKS 
+
+        librerias: sitio que nos ofrece un grupo de elementos para usar en la pagina
+
+        ejemplo
+            colorfilter ; animista ;   
+
+        frameworks: es un banco de trabajo, compuesto de diferentes librerias 
+
+            tipo utilidad: se asemeja a css 
+            tipo componente: ya vienen con codigos pre armados ; tailwincss
+
+    Bootstrap
+
+        funciona con un concepto de contenedores          
+        funciona poniendo clases en cada uno de los elementos de html y se aplica un css automatico sin necesidad de escribir codigo css
+
+        
+             
+
 
 
 
