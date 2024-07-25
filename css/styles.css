@@ -15,12 +15,11 @@
 
 /* ------ HEADER - NAV ------ */ 
 
-header{
+header {
     display: flex;
     flex-direction: row;
-    background-color: #8BA76C;        /* Aplica color al fondo del nav */
-    justify-content: space-between;     /* Mueve el contenido */
-    padding: 0rem, 1.875rem;
+    background-color: #8BA76C;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -34,6 +33,13 @@ header{
     list-style-type: none; /* Elimina los puntos negros */
     gap: 1.25rem;
     flex-wrap: wrap;
+    margin-right: 1.25rem;
+    align-items: center;
+}
+
+.nav-bar li {
+    margin: 0;
+    padding: 5px;
 }
 
 .nav-bar li a{
@@ -43,9 +49,6 @@ header{
     font-style: normal;
     text-decoration: none;
     padding: 10px 20px;
-
-    /* El color que quiero que tome cuando pase el mouse por arriba 
-    background-color: #748B5B; */
 }
 
 .logo1{
@@ -53,7 +56,7 @@ header{
     margin: 0.9375rem 0px 0px 3.125rem;
 }
 
-.opc:hover {
+.opc:hover{
     background-color: #748B5B;
 }
 
@@ -133,8 +136,8 @@ body{
 }
 
 .contenedor{
-    margin-left: 4.6875rem;
-    margin-right: 4.6875rem;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -372,6 +375,7 @@ body{
 
 /*--- Galerias de imagenes ---*/
 
+
 .galeria div{
     position: relative;
 }
@@ -405,7 +409,6 @@ body{
     object-fit: cover;
 }
 
-/*  */
 /* ------------------------------------------------------------------------- */
 
 @media (max-width: 768px){
@@ -765,3 +768,6 @@ body{
 
 
 }
+
+
+
