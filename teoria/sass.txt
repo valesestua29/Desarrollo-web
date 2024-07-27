@@ -1,0 +1,57 @@
+/* ---------- CLASE 12 ----------- */
+
+    Pre Procesadores CSS
+
+        SASS es un preprocesador de css que permite escribir codigo, el cual luego se transforma en un archivo css puro
+        Esto genera un codigo mas limpio y sencillo de mantener y editar, a traves de una estructura ordenada, usando un lenguaje de estilos
+
+        
+        para usar sass necesito instalar nodejs
+        1. en git bash posicionado en la carpeta que voy a trabajar pongo el comando
+            npm init y le doy aceptar a todo
+        2. una vez aplicado el comando, en la carpeta se va a crear el archivo package.json
+        3. en git bash npm install -D node-sass nodemon que instala sass en mi proyecto y controla el codigo css
+        4. en el archivo package.json al final de la linea 7 agrego una , y un salto de linea para agregar la siguiente linea de codigo
+            "build-css":"node-sass --include-path scss ./sass/style.scss ./css/style.css",
+            "watch-css":"nodemon -e scss -x \"npm run build-css\""
+        5. en la consola pongo el comando 
+            npm run watch-css
+
+    Puedo descargar prepros si no puedo usar la consola para usar SASS
+        https://prepros.io/
+
+    La manera de escribir codigo en sass es aplicando estilos a cada una de las etiquetas, siguiendo la linea de 
+    codigo de html 
+
+    ejemplo1
+
+        .navbar{
+            display: flex;
+            list-style-type: none;
+            li{
+                a{
+                    text-decoration: none;
+                    &:hover{
+                        color: blue;        // en caso de querer usar pseudoclases utilizo el simbolo &
+                    }
+                }
+            }
+        }
+
+    VARIABLES ----
+
+        ejemplo2: "mi cliente quiere que al otro dia cambie de color todo"
+
+            sass ofrece variables
+            las variables llevan el nombre de aquello que se quiera modificar
+
+            $background: grey;
+            $color: red; 
+
+            busco en el codigo lo que quiero modificar y pongo $ con la modificacion que quiero hacer
+
+            hay que inicializar las variables SIEMPRE al inicio
+
+/* ---------- CLASE 13 ----------- */
+
+    
