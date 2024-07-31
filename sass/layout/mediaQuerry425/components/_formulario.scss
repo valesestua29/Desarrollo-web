@@ -1,0 +1,32 @@
+/* ---- FORM CONTACTO 425 ----- */
+
+
+.texto-titul{
+    font-size: 20px ;
+}
+
+.formulario{
+    width: 300px;
+    height: 570px;
+    p{
+        label {
+            input{
+                width: 220px;
+                height: 10px;
+                padding: 15px;
+            }
+
+            textarea{
+                width: 220px;
+                height: 100px;
+                padding: 15px
+            }
+        }
+    }
+}
+
+.boton-enviar2 {
+    padding: 10px 25px;
+    margin-right: 0px;
+    float: right;
+}

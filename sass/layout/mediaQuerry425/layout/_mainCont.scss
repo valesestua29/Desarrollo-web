@@ -1,0 +1,45 @@
+/*----- MAIN CONTACTO 425 ------- */
+
+.main-contacto{
+    div{
+        h1{
+            font-size: 24px;
+        }
+    }
+
+    form{
+        h2{
+            font-size: 20px;
+        }
+    }
+}
+
+.grid3{
+    margin:0px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "cont1"
+    "cont2";
+
+    div{
+        margin: 10px;
+        img{
+            width: 1.875rem;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            margin:0px 20px;
+            align-items: start;
+
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}

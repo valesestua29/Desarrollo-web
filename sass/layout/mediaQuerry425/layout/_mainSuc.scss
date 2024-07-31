@@ -1,0 +1,50 @@
+/* ------ MAIN SUC 425 ------- */
+
+
+.main-ns{
+    div{
+        div{
+            h1{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.grid2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    div{
+
+        position: relative;
+        width: 100%;
+        max-width: 500px; /* Ajusta el tamaño máximo según tus necesidades */
+        background: url('../assets/Img/cartel_serenfolia.jpg') no-repeat center center;
+        background-size: cover; 
+        text-align: center; 
+        h2{
+            width: 100%;
+            background-color: #acacacb4;
+            
+        }
+        img{
+            display: none;
+
+        }
+        iframe{
+            display: none;
+        }
+        p{
+            width: 100%;
+            background-color: #d9d9d9b4;
+            padding: 30px 10px;
+            font-size: px;
+            font-weight: 800;
+        }
+    }
+}

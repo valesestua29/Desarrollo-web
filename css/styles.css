@@ -528,5 +528,183 @@ footer {
     grid-template-areas: "div1 div1" "div2 div3" "div4 div3" "div5 div6";
   }
 }
+/* ---- MediaQuerry 425 ---- */
+@media (max-width: 425px) {
+  /* ----- HEADER 425 ------ */
+  header nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8BA76C;
+    padding: 0.625rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.404);
+    z-index: 5;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+  header nav ul li {
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+  }
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    padding: 5px;
+    border: 0;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* ------ FOOTER 425 -------- */
+  footer {
+    padding: 0px, 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-footer {
+    padding: 0.1875rem;
+    margin: 0px;
+  }
+  .info-footer div {
+    margin: 0px 5px;
+  }
+  .info-footer div img {
+    width: 1.5625rem;
+  }
+  .info-footer div h2 {
+    font-size: 14px;
+  }
+  .info-footer div p {
+    font-size: 12px;
+  }
+  .redes-sociales {
+    margin: 0px;
+  }
+  .redes-sociales a img {
+    width: 70px;
+  }
+  /* ------- MAIN INDEX 425 -------- */
+  .contenedor img {
+    width: 50%;
+  }
+  .contenedor article p {
+    font-size: 14px;
+    padding-top: 5px;
+    margin: 10px;
+  }
+  /* -------- MAIN SERV 425 ----------- */
+  .contenedor div div p {
+    font-size: 12px;
+  }
+  .lista-trabajos dl dt {
+    font-size: 14px;
+  }
+  .lista-trabajos dl dd {
+    font-size: 14px;
+  }
+  /* ------ MAIN SUC 425 ------- */
+  .main-ns div div h1 {
+    font-size: 22px;
+  }
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .grid2 div {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Ajusta el tamaño máximo según tus necesidades */
+    background: url("../assets/Img/cartel_serenfolia.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+  }
+  .grid2 div h2 {
+    width: 100%;
+    background-color: rgba(172, 172, 172, 0.7058823529);
+  }
+  .grid2 div img {
+    display: none;
+  }
+  .grid2 div iframe {
+    display: none;
+  }
+  .grid2 div p {
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.7058823529);
+    padding: 30px 10px;
+    font-size: px;
+    font-weight: 800;
+  }
+  /*----- MAIN CONTACTO 425 ------- */
+  .main-contacto div h1 {
+    font-size: 24px;
+  }
+  .main-contacto form h2 {
+    font-size: 20px;
+  }
+  .grid3 {
+    margin: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "cont1" "cont2";
+  }
+  .grid3 div {
+    margin: 10px;
+  }
+  .grid3 div img {
+    width: 1.875rem;
+  }
+  .grid3 div div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    align-items: start;
+  }
+  .grid3 div div h3 {
+    font-size: 16px;
+  }
+  .grid3 div div p {
+    font-size: 12px;
+  }
+  /* ---- FORM CONTACTO 425 ----- */
+  .texto-titul {
+    font-size: 20px;
+  }
+  .formulario {
+    width: 300px;
+    height: 570px;
+  }
+  .formulario p label input {
+    width: 220px;
+    height: 10px;
+    padding: 15px;
+  }
+  .formulario p label textarea {
+    width: 220px;
+    height: 100px;
+    padding: 15px;
+  }
+  .boton-enviar2 {
+    padding: 10px 25px;
+    margin-right: 0px;
+    float: right;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
