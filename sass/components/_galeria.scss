@@ -1,0 +1,32 @@
+/* -------- GALERIA DE IMG --------- */
+
+.galeria {
+    margin-top: 4.6875rem;
+    margin-bottom: 1.5625rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: .125rem;
+    grid-row-gap: .125rem;
+
+    grid-template-areas: 
+    "div1 div1 div2 div3"
+    "div4 div5 div6 div3";
+
+    div{
+        position: relative;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.div1{ grid-area: div1;}
+.div2{ grid-area: div2;}
+.div3{ grid-area: div3;}
+.div4{ grid-area: div4;}
+.div5{ grid-area: div5;}
+.div6{ grid-area: div6;}

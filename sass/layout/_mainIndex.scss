@@ -1,0 +1,37 @@
+/*------- MAIN INDEX ------------*/
+
+.imagen-principal {
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+.contenedor{
+    
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        width: 40%;
+        margin: .3125rem;
+    }
+
+    article{
+        p{
+            font-family: "Cormorant", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.125rem;
+
+            text-align: justify;
+            line-height: 1.6em;
+            padding-top: .625rem;
+            margin: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* -------- FORMULARIO - CONTACTO -------- */
+
+.texto-titul{
+    color:black;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario{
+    background-color: #8ca76ca4;
+    padding: 20px;
+    width: 600px;
+    height: 700px;
+    p{
+        font-family: "Cormorant", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+
+        text-align: justify;
+        line-height: 1.6em;
+        padding-top: 10px;
+        margin: 20px;
+
+        label {
+            input{
+                width: 500px;
+                height: 50px;
+                padding: 15px;
+            }
+
+            textarea{
+                width: 500px;
+                height: 150px;
+                padding: 15px
+            }
+        }
+    }
+}
+
+.boton-enviar2 {
+    padding: 10px 25px;
+    margin-right: 40px;
+    float: right;
+}

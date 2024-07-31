@@ -1,0 +1,59 @@
+/* ---------- FOOTER --------------- */
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #8BA76C;        /* Aplica color al fondo del nav */
+    justify-content: space-between;     /* Mueve el contenido */
+    padding: 0rem .625rem;
+}
+
+
+.info-footer{
+    display: flex;
+    padding: .3125rem;
+    margin: .625rem;
+    
+    div{
+        margin: 0px 30px;
+        img{
+            width: 2.5rem;
+            margin: 10px 0px;
+        }
+        h2{
+            font-family: "Lato";
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            color: #013F18;
+            text-align: justify;
+        }
+        p{
+            font-family: "Cormorant", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: .9375rem;
+            color: #FFFFFF;
+            text-align: justify;
+        }
+    }
+}
+
+.titulo-footer {
+    padding-top: 8px;    //corrige la diff de altura a causa de la diff de tamaño de imagen
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    margin-right: 3.125rem;
+    a{
+        img{
+            width: 6.25rem;
+            text-decoration: none;
+            padding: 1.5625rem;
+        }
+    }
+}
+

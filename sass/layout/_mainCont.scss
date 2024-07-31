@@ -1,0 +1,41 @@
+/* ------- MAIN CONTACTO -------- */
+
+.main-contacto{
+    background: url(../assets/Img/fondo3-3.png);
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat;
+}
+
+.grid3{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: .125rem;
+    grid-row-gap: .125rem;
+
+    margin: 0px 0px 0px 50px; 
+    grid-template-areas: 
+    "cont1 cont2";
+
+    div{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centrar verticalmente */
+        margin: 1.25rem;
+
+        img{
+            width: 3.125rem;
+            margin: 10px 0px;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            margin:0px 20px;
+            align-items: start;
+        }
+    }
+}

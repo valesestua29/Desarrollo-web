@@ -1,0 +1,51 @@
+/* ------- HEADER ------- */
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #8ba76c;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        img{
+            width: 7.1875rem;
+            margin: 0.9375rem 0rem 0rem 3.125rem;
+        }
+    }
+
+    button{
+        display: none;
+    }
+
+    nav{
+        button{
+            display: none;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            margin-right: 1.25rem;
+            align-items: center;
+
+            li{
+                margin: 0rem;
+                padding: .3125rem;
+                a{
+                    color:black;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    text-decoration: none;
+                    padding: .625rem;
+                    font-size: .9375rem;
+                }
+            }
+        }
+    }
+}
+
+.opc:hover{
+    background-color: #748B5B;
+}

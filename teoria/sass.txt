@@ -54,4 +54,84 @@
 
 /* ---------- CLASE 13 ----------- */
 
+
+    IMPORTANTE: para agregar sass a nuestro proyecto cambio el nombre de mi doc css a styles-original.css 
+    para que no lo detecte el sass y lo elimine al suplantar codigo.
+
+    Seccionar el codigo -
+
+        si no quiero usar clases diferentes para seccionar puedo por ejemplo realizar lo siguiente
+            .main-index{
+                background-color: yellow;
+                section{
+                    h2{
+                        color: red;
+                        font-size: 10px;
+                    }
+                    &:nth-child(1){         //llamo a la etiqueta section y a todos los parrafos que correspondan al SECTION 1
+                        background-color: violet;
+                        p{
+                            color: green; 
+                        }
+                    }
+                }
+            }
+
+    Ordenar un bloque de codigo ya fragmentado -
+
+        base: se incorpora todo lo que es parte del reset o estilos generales: resets, tipografias, generales
+            todo se trabaja en pequeños archivos ej: _reset.scss
+        components: se agregan los componentes: carrusel ; bootstrap ; card 
+        layout: se encarga de guardar todos los bloques de codigo: nav ; main ; sections ; footers ; header ; mediaQuerry (en carpetas)
+        utilities: van a alojar las herramientas que ofrece sass: maps, variables, funciones, mixins 
+
+
+    Como ir llamando a cada fragmento de codigo -
+
+        -- siempre hay que llamar primero a las utilities
+            1- variables
+            2- mapas
+            3- mixinis
+            4- funcioones
+
+            para llamarlos usamos @import "./utilities/mapas";
+
+        -- se llaman a los archivos de base 
+            @import "./base/reset" ;
+
+        -- se llama a los archivos layout
+            @import "./layout/header";
+            @import "./layout/footer";
+
+        -- se llama a los componentes 
+            @import "./components/cards";
+
+
+    Migracion del proyecto a sass 
+        
+        para poner propiedades a dos etiquetas similares puedo usar @extend .nombreDeLaClase 
+
+        cuando trabajo con MediaQ siempre hay que ordenarlos en base a como se trabaja el proyecto; 
+
+
+    Mixins 
+
+        @mixin es un maps avanzado que tiene la estructura de una funciones
+
+        @mixin nombre { } es para generar bloques de codigo que tengan cosas en comun con el resto de cont
+
+        - proyecto principal @import "./utilities/mixins" ; 
+
+        para llamar a un mixin @include nombreMixi ;
+
+
+
+
+INICIAR RAPIDO SASS EN LA CONSOLA
+
+    -----------------
+    sass --watch ./   ./
+    -----------------
+
+
     
