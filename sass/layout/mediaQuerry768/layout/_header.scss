@@ -1,0 +1,51 @@
+/* -------- HEADER 768 ------- */
+
+header{
+    nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #8BA76C;
+        padding: .625rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.404);
+        z-index:5;
+
+        ul{
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+
+            li{
+                padding: 5px;
+                margin: 0px 0px 10px 0px;
+            }
+        }
+    }
+
+}
+
+.abrir-menu{
+    margin-right: 3.125rem;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: block;
+    padding: 5px;
+    border: 0;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}

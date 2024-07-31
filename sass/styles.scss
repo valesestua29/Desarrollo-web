@@ -2,13 +2,13 @@
 
 @import "./base/universal";
 
+@import "./base/bodyColor";
+
+
+
 @import "./layout/header";
 
 @import "./layout/footer";
-
-@import "./base/bodyColor";
-
-@import "./components/galeria";
 
 @import "./layout/mainIndex";
 
@@ -18,6 +18,14 @@
 
 @import "./layout/mainCont";
 
+
+@import "./components/galeria";
+
 @import "./components/formulario";
 
 @import "./components/cargaCv";
+
+
+/* ---- MediaQuerry 768 ---- */
+
+@import "./layout/mediaQuerry768/styles768.scss"
