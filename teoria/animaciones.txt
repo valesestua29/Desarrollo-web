@@ -1,0 +1,60 @@
+/* ------- CLASE 14 ------------- */
+    
+    ANIMACIONES
+
+        Se trabaja si o si con ejes 
+            X : eje horizontal
+            Y : eje vertical
+            Z : eje de profundidad
+
+        Gradientes
+            lineales y radiales 
+        
+        en CSS 
+            background:         ;    // trabajamos la prop a manera general 
+            background-image: linear-gradient(color1, color2); 
+            background-image: linear-gradient( to top left color1, color2);     // le da direccion al Gradientes
+            background-image: linear-gradient( to top left color1 10%, color2 90%);     // le da direccion al Gradientes
+
+        sitios web  // generan gradientes automaticos
+            MY COLOR SPACE      
+            CSS GRADIENT
+
+
+        Gradiente en letras
+            font-size: ;
+            background-image: linear-gradient( );
+            -webkit-background-clip: text ; // para la compatibilidad de navegadores 
+            background-clip: text;
+            color: transparent; 
+
+        
+        Transformaciones
+            
+            movimiento ; escalado ; voltear ; cambiar perspectiva 
+
+            translate: mover objetos
+                transform:translate(); // cambia la ubicacion del objeto, como si fuese una posicion
+                requiere dos numero y su unidad, separados por una coma 
+
+                - el primer es el desplazamiento horizontal X
+                - el segundo es el desplazamiento vertical y
+                - valores positivos: mueven derecha / abajo
+                - valores negativos: mueven izquierda / arriba
+                - tambien existen translateX() y translateY()
+            
+            en CSS
+
+            h1:hover{
+                transform: translate (100px, 200px);
+                transform: scale (1.5);                 // hace escalaciones de imagenes
+            }
+
+            transform: rotate(Xdeg); // para rotar X cant de grados
+
+            skew se aplica a las imagenes
+                transform: skew (Xdeg);  //cambia la perspectiva del elemento 
+
+            
+
+
