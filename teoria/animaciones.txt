@@ -56,5 +56,43 @@
                 transform: skew (Xdeg);  //cambia la perspectiva del elemento 
 
             
+        Transiciones 
+            Lo que hace es controlar los movimientos de los elementos al aplicarle
+            una animacion y una transformacion 
+
+            transition: propiedad duracion aceleracion-desa delay ;
+
+            en CSS 
+
+                en inet: cubic-bezier 
+
+                transition: all 2000ms linear 100ms ; 
+
+        
+        Animaciones 
+
+            Se repiten en bucle, no depende del cambio de estado. 
+            Es la union de dos partes: la linea de tiempo (Keyframe) con la informacion de los cambios y 
+            la aplicacion de ese keyframe a un elemento que sera el que se vera animado 
+
+            etiqueta_animada{
+                animation-name: un_efecto;              // nombre de la animacion 
+                animation-iteration-count: infinite;    // la cant de veces que se va a repetir 
+                animation.timing-function: ease-in;     // la aceleracion de la animacion
+                animation-duration: 2s;                 // duracion de la animacion 
+                animation-delay: 10s;                   // delay de la animacion 
+            }
+        
+            @keyframe un_efecto{
+                
+                0% {width: 100px;}
+                10% {width: 50px;}
+                25% {width: 300px;}
+                50% {width: 200px;
+                    background-colro: red;}
+                75% {width: 300px;}
+                100% {width: 100px;
+                    background-color: green;}
+            }
 
 
