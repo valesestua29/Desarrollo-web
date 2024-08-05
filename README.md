@@ -8,7 +8,7 @@ En este proyecto, encontrarás una colección de ejemplos y prácticas de desarr
 
 ## Demo
 
-Puedes ver una demo en vivo de este proyecto aquí: [Desarrollo Web](https://valesestua29.github.io/desarrollo-web/)
+Puedes ver una demo en vivo de este proyecto aquí: [Serenfolia-Web](https://valesestua29.github.io/desarrollo-web/)
 
 ## Características
 
