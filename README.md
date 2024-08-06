@@ -1,6 +1,6 @@
-# Desarrollo Web 
+# Serenfolia Web 
 
-Bienvenido al repositorio de **Desarrollo Web**. Este proyecto está dedicado a mostrar y compartir diversos desarrollos y experimentos en el ámbito del desarrollo web.
+Bienvenido al repositorio de **Serenfolia web**. Este proyecto está dedicado a mostrar y compartir diversos desarrollos y experimentos en el ámbito del desarrollo web.
 
 ## Descripción
 
